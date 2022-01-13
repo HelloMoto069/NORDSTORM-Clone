@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        u {
+            cursor: pointer;
+        }
+
+        #logo img {
+            height: 150px;
+            width: 250px;
+            cursor: pointer;
+        }
+        .startbox {
+         text-align: center;
+         background-color: rgb(0, 0, 0);
+         color: blanchedalmond;
+         padding: 7px;
+         
+        }
+        .navbar {
+            display: flex;
+        }
+        .navbar2 {
+            display: flex;
+        }
+        #nav-cn {
+            display: flex;
+            width: 100%;
+            height: 47px;
+            align-items: center;
+        }
+
+        #nav-cn2 {
+            display: flex;
+            width: 100%;
+            height: 45px;
+            
+        }
+
+        #right {
+            display: flex;
+            width: 70%;
+            justify-content: right;
+        }
+
+        .nav-fnt{
+            cursor: pointer;
+        }
+
+        #right img {
+            height: 40px;
+            width: auto;
+            margin-left: 50px;
+            margin-right: 0%;
+            align-items : right;
+        }
+
+        #nav-cn2 div {
+            margin: 10px 30px;
+            cursor: pointer;
+        }
+
+        #strtmdl {
+            border: 40px;
+            align-items : center;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #strtmdl1 {
+            padding: 10px 10px;
+        }
+
+        #strtmdl2 {
+            padding: 0px 0px 50px;
+        }
+        
+        .signup-container {
+            width: 30%;
+            margin: auto;
+
+            border-radius: 10px;
+            padding: 20px;
+
+        }
+
+        .signup-btn {
+            background-color: black;
+            border: none;
+            color: white;
+            margin-left: 10px;
+            padding: 10px;
+            width: 95%;
+            font-weight: 700;
+
+        }
+
+        .signup-btn:hover {
+            background-color: rgb(36, 36, 36);
+        }
+
+        .signup-label {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 10px;
+        }
+
+        .signup-input {
+            padding: 10px;
+            margin-left: 10px;
+            width: 90%;
+            border: 1px solid #bbb
+        }
+
+        .endingDiv {
+    width: 100%;
+    background-color: rgb(246,246,246);
+}
+.endingTextDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.endingTextDiv > div {
+    height: 250px;
+    width: 15.5%;
+}
+.endingTextDiv p {
+    font-size: 13px;
+}
+.termsOfService {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.termsOfService > p {
+    font-size: 13px;
+}
+
+    </style>
+</head>
+<body>
+
+    <p class = "startbox">
+        <strong>
+            Pick up today</strong> in store or curbside. <u>Pickup & Delivery Options</u>
+        </p>
+
+<nav>
+<nav class = "navbar">
+    <div id="nav-cn">
+        <div id="logo">
+           <p onclick="document.location='home.html'"> <img src = "images\NORDSTROM.png"> </p>
+        </div>
+        <div id="right">
+            <div>
+                
+                <p class="nav-fnt" > <img src = "images\search.png"> </p>
+            </div>
+            <div>
+                <p onclick="document.location='signin.html'" class="nav-fnt"> <img src = "images\signin.png"> </p>
+            </div>
+            <div>
+                <p class="nav-fnt"> <img src = "images\lock.png"> </p>
+            </div>
+        </div>
+    </div>
+</nav>
+</nav>
+
+<nav>
+<nav class = "navbar2">
+    <div id="nav-cn2">
+        <div style="color: red;"> Holiday Gifts </div>
+        <div> Women </div>
+        <div> Men </div>
+        <div> Kids </div>
+        <div> Young Adults </div>
+        <div> Activewear </div>
+        <div> Home </div>
+        <div> Beauty </div>
+        <div> Designer </div>
+        <div> Sale </div>
+        <div> Brands </div>
+    </div>
+</nav>
+</nav>
+
+<div id="strtmdl">
+    
+    <div id="strtmdl1"> 
+        <strong>Easier shopping tailored for you.</strong>
+    </div>
+    
+    <div id="strtmdl2"> 
+    <button class="buttonclass" onclick="alert('Itna bnane me hi 5 din ho gaye the')">Sign In or Create an Account.</button>
+    </div>
+    
+    <div class="signup-container" id="email_container">
+        <h2 style="margin:10px;">Sign In | Create Account</h2>
+        <p style="margin:10px;">Enter your email to get started</p>
+
+        <label class="signup-label" for="email">Email</label>
+        <br>
+        <input class="signup-input" type="text" id="email" style="margin:10px;" />
+        <br>
+        <p></p>
+        <button class="signup-btn" onclick="document.location='home.html'">Next</button>
+        <p style="margin:10px;">By tapping Next, you agree to our <u>Privacy Policy </u> and 
+           <u> Terms & Conditions. </u></p>
+    </div>
+
+    <div class="endingDiv">
+        <div class="endingTextDiv">
+            <div>
+                <h5>Customer Service</h5>
+                <p>Contact Us</p>
+                <p>Order Status</p>
+                <p>Shipping</p>
+                <p>Returns & Exchanges</p>
+                <p>Product Recalls</p>
+            </div>
+            <div>
+                <h5>About Us</h5>
+                <p>Stores & Events</p>
+                <p>Careers</p>
+                <p>Corporate Social Responsibility</p>
+                <p>Diversity, Inclusion & Belonging</p>
+                <p>Get Email Updates</p>
+            </div>
+            <div>
+                <h5>Services</h5>
+                <p>Personal Styling</p>
+                <p>Alterations & Tailoring</p>
+                <p>Spa Nordstrom</p>
+                <p>Nordstrom Restaurants</p>
+                <p>Gift Cards</p>
+            </div>
+            <div>
+                <h5>Nordstrom Card</h5>
+                <p>Pay My Bill</p>
+                <p>Manage My Nordstrom Card</p>
+            </div>
+            <div>
+                <h5>Nordstrom, Inc</h5>
+                <p>Nordstrom Rack</p>
+                <p>Nordstrom Canada</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div> 
+            <div>
+                <h5>Gift Cards</h5>
+                <p>Stores & Events</p>
+                <p>Careers</p>
+                <p>Trunk Club</p>
+                <p>Investor Relations</p>
+                <p>Press Releases</p>
+            </div>
+        </div>
+        <div class="termsOfService">
+            <p>Terms & Conditions</p>
+            <p>@2022 Nordstrom, Inc.</p>
+        </div>
+    </div>
+
+</body>
+</html>
