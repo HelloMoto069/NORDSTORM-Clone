@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordstorm</title>
+    <style>
+        
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        u {
+            cursor: pointer;
+        }
+
+        #logo img {
+            height: 150px;
+            width: 250px;
+            cursor: pointer;
+        }
+        .startbox {
+         text-align: center;
+         background-color: rgb(0, 0, 0);
+         color: blanchedalmond;
+         padding: 7px;
+         
+        }
+        .navbar {
+            display: flex;
+        }
+        .navbar2 {
+            display: flex;
+        }
+        #nav-cn {
+            display: flex;
+            width: 100%;
+            height: 47px;
+            align-items: center;
+        }
+
+        #nav-cn2 {
+            display: flex;
+            width: 100%;
+            height: 45px;
+            
+        }
+
+        #right {
+            display: flex;
+            width: 70%;
+            justify-content: right;
+        }
+
+        .nav-fnt{
+            cursor: pointer;
+        }
+
+        #right img {
+            height: 40px;
+            width: auto;
+            margin-left: 50px;
+            margin-right: 0%;
+            align-items : right;
+        }
+
+        #nav-cn2 div {
+            margin: 10px 30px;
+            cursor: pointer;
+        }
+
+        #strtmdl {
+            border: 40px;
+            align-items : center;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #strtmdl1 {
+            padding: 10px 10px;
+        }
+
+        #strtmdl2 {
+            padding: 0px 0px 50px;
+        }
+
+        .buttonclass {
+            background-color: #ffffff;
+            border: 1px solid rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            padding: 15px 30px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 10px;
+            cursor: pointer;
+        }
+
+        .buttonclass:hover {
+            background-color: #d1d1d1;
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(255, 255, 255);
+        }
+
+        .myslides {
+            position: relative;
+            
+        }
+
+        .mySlidesimg {
+            position: relative;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+.redshrt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.redshrtDivs {
+    width: 100%;
+    
+}
+
+.redshrtDivs > img {
+    width: 100%;
+}
+
+.redDiv {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(254,59,31);
+}
+.redDiv p {
+    color: rgb(255,255,255);
+}
+.redDiv > p:first-child {
+    font-size: 50px;
+    word-spacing: 10px;
+    font-weight: bold;
+    padding-top: 50px;
+    
+    margin-bottom: 20px;
+}
+.redDiv > p:nth-child(2) {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0cm;
+    margin-top: 0px;
+}
+.redDiv > p:last-child {
+    font-size: 14px;
+}
+.redDiv > p:last-child > button {
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(254,59,31);
+    text-decoration: underline;
+    padding-bottom: 50px;
+}
+.categoryDiv {
+    height: 450px;
+    width: 100%;
+    text-align: center;
+}
+.catDivs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.catDiv1 {
+    width: 15.8%;
+    height: 380px;
+}
+.catDiv1 > img {
+    width: 100%;
+}
+.catDiv1 > p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.pink {
+    width: 100%;
+    position: relative;
+}
+.pink > img {
+    width: 100%;
+}
+.pinkTextDiv {
+    width: 50%;
+    height: 60px;
+    top: 40%;
+    left: 1.5%;
+    position: absolute;
+}
+.pinkTextDiv > p {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+.pinkTextDiv > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.pinkTextDiv > div > button {
+    font-size: 15px;
+    padding-left: 0px;
+    color: rgb(255, 0, 0);
+    border: none;
+    text-decoration: underline;
+}
+.trunkDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.trunkDiv > div {
+    width: 49.5%;
+    height: 350px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.trunkTextDiv {
+    width: 200px;
+    height: 200px;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+   
+}
+.trunkTextDiv2 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 65%;
+    position: absolute;
+}
+.trunkTextDiv > p, .trunkTextDiv2 > p {
+    font-size: 15px;
+    line-height: 0.6cm;
+    text-align: center;
+}
+.trunkTextDiv > button, .trunkTextDiv2 > button {
+    border: none;
+    font-size: 15px;
+    margin-left: 15%;
+    text-decoration: underline;
+    background-color: rgb(243,245,245);
+}
+.trunkTextDiv2 > button {
+    margin-left: 0%;
+    font-size: 16px;
+}
+.trunkDiv > div > img {
+    width: 100%;
+    height: 350px;
+}
+.helpDiv {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(246,246,246);
+}
+.helpDiv > p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    word-spacing: 5px;
+}
+.trackDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.trackDiv > img {
+    width: 100%;
+}
+.touch {
+    width: 100%;
+    position: relative;
+}
+.touch > img {
+    width: 100%;
+
+}
+.touchTextDiv {
+    width: 100%;
+    top: 20%;
+    left: 10%;
+    position: absolute;
+   
+}
+.touchTextDiv > h3 {
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+.touchTextDiv > p {
+    padding-top: 5px;
+    font-size: 15px;
+}
+.touchTextDiv > button {
+    border: none; 
+    font-size: 16px;
+    padding-left: 0px;
+    text-decoration: underline;
+    background-color: rgb(246,246,246);
+}
+.endingDiv {
+    width: 100%;
+    background-color: rgb(246,246,246);
+}
+.endingTextDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.endingTextDiv > div {
+    height: 250px;
+    width: 15.5%;
+}
+.endingTextDiv p {
+    font-size: 13px;
+}
+.termsOfService {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.termsOfService > p {
+    font-size: 13px;
+}
+        
+
+    </style>
+    
+</head>
+
+<body>  
+        <p class = "startbox">
+            <strong>
+                Pick up today</strong> in store or curbside. <u>Pickup & Delivery Options</u>
+            </p>
+    
+<nav>
+    <nav class = "navbar">
+        <div id="nav-cn">
+            <div id="logo">
+               <p onclick="document.location='home.html'"> <img src = "images\NORDSTROM.png"> </p>
+            </div>
+            <div id="right">
+                <div>
+                    <p class="nav-fnt" > <img src = "images\search.png"> </p>
+                </div>
+                <div>
+                    <p onclick="document.location='signin.html'" class="nav-fnt"> <img src = "images\signin.png"> </p>
+                </div>
+                <div>
+                    <p class="nav-fnt"> <img src = "images\lock.png"> </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+</nav>
+
+<nav>
+    <nav class = "navbar2">
+        <div id="nav-cn2">
+            <div style="color: red;"> Holiday Gifts </div>
+            <div> Women </div>
+            <div> Men </div>
+            <div> Kids </div>
+            <div> Young Adults </div>
+            <div> Activewear </div>
+            <div> Home </div>
+            <div> Beauty </div>
+            <div> Designer </div>
+            <div> Sale </div>
+            <div> Brands </div>
+        </div>
+    </nav>
+</nav>
+<div id="strtmdl">
+    
+    <div id="strtmdl1"> 
+        <strong>Easier shopping tailored for you.</strong>
+    </div>
+    
+    <div id="strtmdl2"> 
+    <button class="buttonclass" onclick="document.location='signin.html'">Sign In or Create an Account.</button>
+    </div>
+
+    <div class="myslides">
+        <div class="myslidesitem">
+            <img class="mySlidesimg" src="images\hover1.png" style="width:100%">
+        </div>
+        <div class="myslidesitem">
+            <img class="mySlidesimg" src="images\hover2.png" style="width:100%">
+        </div>
+        <div class="myslidesitem">
+            <img class="mySlidesimg" src="images\hover3.png" style="width:100%">
+        </div>
+      
+        <button class="myslidesleft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="myslidesright" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+     <div>
+        <img src="images\marry.png" style="width:100%">
+     </div>
+</div>
+
+<div>
+    <img  src="images\curb.jpg" style="width:100%">
+</div>
+
+<div class="redshrt">
+    <div class="redshrtDivs">
+        <img src="images/redshrt.jpeg" />
+    </div>
+    <div class="redshrtDivs">
+        <img src="images/boat.jpeg" />
+    </div>
+    <div class="redshrtDivs">
+        <img src="images/game.jpeg" />
+    </div>
+</div>
+
+<div>
+    <img  src="images\crowd.jpg" style="width:100%">
+</div>
+
+<div class="redDiv">
+    <p>DESIGNER CLEARANCE</p>
+    <p>UPTO 40% OFF</p>
+    <p>From the best brands of the season. <button>Designer Sale</button></p>
+</div>
+<div class="categoryDiv">
+    <h2>SHOP BY CATEGORIES</h2>
+    <div class="catDivs">
+        <div class="catDiv1">
+            <img src="images/newyearsale.PNG"/>
+            <p>New Year Sale</p>
+        </div>
+        <div class="catDiv1">
+            <img src="images/women.jpeg" />
+            <p>Shop Women</p>
+        </div>
+        <div class="catDiv1">
+            <img src="images/bag.jpeg" />
+            <p>Shop Designer</p>
+        </div>
+        <div class="catDiv1" id="catDiv1">
+            <img src="images/shopMen.jpg" />
+            <p>Shop Men</p>
+        </div>
+        <div class="catDiv1">
+            <img src="images/shopKids.jpg" />
+            <p>Shop Kids</p>
+        </div>
+        <div class="catDiv1">
+            <img src="images/shopBeauty.jpg" />
+            <p>Shop Beauty & Fragrance</p>
+        </div>
+    </div>
+</div>
+
+<div class="pink">
+    <img src="images/pinkOwned.jpeg"/>
+    <div class="pinkTextDiv">
+        <p>Get free gift advice from our experts in stores and online, or give the gift they pick with a Nordstrom Gift Card. Plus, get free gift wrapping and free signature gift boxes in stores..</p>
+        <div>
+            <button>Book a Free Appointment</button>
+            <button>Chat with a Stylist</button>
+            <button>Gift Cards</button>
+            <button>Gift Wrap</button>
+        </div>
+    </div>
+</div>
+<div class="trunkDiv">
+    <div>
+        <img src="images/trunk.jpeg"/>
+        <div class="trunkTextDiv">
+            <p>Try before you with Nordstrom Trunk Club. Get head-to-toe outfits, styled by us, delivered right to your door.</p>
+            <button>Take Your Style Quiz</button>
+        </div>
+    </div>
+    <div>
+        <img src="images/styleHelp.jpeg"/>
+        <div class="trunkTextDiv2">
+            <h2>Free Style Help</h2>
+            <p>Connect with a stylist in stores or online. It's free and easy - with zero pressure.
+            </p>
+            <button>Book an Appointment Nordstrom Styling</button>
+        </div>
+    </div>
+</div>
+<div class="helpDiv">
+    <p>NEED   HELP ?</p>
+    <div class="trackDiv">
+        <img src="images/track.PNG"/>
+        <img src="images/return.PNG"/>
+        <img src="images/adjustment.PNG"/>
+    </div>
+    
+</div>
+<div class="touch">
+    <img src="images/touch.jpeg"/>
+    <div class="touchTextDiv">
+        <h3>Stay in Touch</h3>
+        <p>Sign Up and stay in the know! Fashion, beauty, upcoming sales and events - we'll bring it all to you.</p>
+        <button>Sign Up for Email</button>
+    </div>
+</div>
+<div class="endingDiv">
+    <div class="endingTextDiv">
+        <div>
+            <h5>Customer Service</h5>
+            <p>Contact Us</p>
+            <p>Order Status</p>
+            <p>Shipping</p>
+            <p>Returns & Exchanges</p>
+            <p>Product Recalls</p>
+        </div>
+        <div>
+            <h5>About Us</h5>
+            <p>Stores & Events</p>
+            <p>Careers</p>
+            <p>Corporate Social Responsibility</p>
+            <p>Diversity, Inclusion & Belonging</p>
+            <p>Get Email Updates</p>
+        </div>
+        <div>
+            <h5>Services</h5>
+            <p>Personal Styling</p>
+            <p>Alterations & Tailoring</p>
+            <p>Spa Nordstrom</p>
+            <p>Nordstrom Restaurants</p>
+            <p>Gift Cards</p>
+        </div>
+        <div>
+            <h5>Nordstrom Card</h5>
+            <p>Pay My Bill</p>
+            <p>Manage My Nordstrom Card</p>
+        </div>
+        <div>
+            <h5>Nordstrom, Inc</h5>
+            <p>Nordstrom Rack</p>
+            <p>Nordstrom Canada</p>
+            <p>Trunk Club</p>
+            <p>Investor Relations</p>
+            <p>Press Releases</p>
+        </div> 
+        <div>
+            <h5>Gift Cards</h5>
+            <p>Stores & Events</p>
+            <p>Careers</p>
+            <p>Trunk Club</p>
+            <p>Investor Relations</p>
+            <p>Press Releases</p>
+        </div>
+    </div>
+    
+    <div class="termsOfService">
+        <p>Terms & Conditions</p>
+        <p>@2022 Nordstrom, Inc.</p>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+
+<script>
+
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlidesimg");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+     }
+     myIndex++;
+     if (myIndex > x.length) {myIndex = 1}    
+     x[myIndex-1].style.display = "block";  
+     setTimeout(carousel, 1700); // Change image every 1.7 seconds
+    }
+
+
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlidesimg");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+
+    
+
+    </script>
+</html>
