@@ -1,6 +1,6 @@
 var c = 0;
     function changeBGMakeListGrid(str) {
-        const app = "https://raw.githubusercontent.com/vibrantachintya/nordstrom/main/images/make_a_list_grid_transition_" + str;
+        const app = "https://raw.githubusercontent.com/HelloMoto069/NORDSTORM-Clone/main/images/make_a_list_grid_transition_" + str;
         const images = [app + '_1.jpeg', app + '_2.jpeg', app + '_3.jpeg', app + '_4.jpeg', app + '_5.jpeg'];
         const div = document.querySelector('#make_list_transition_'+str);
         const bg = images[c % 5];
