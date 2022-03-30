@@ -21,7 +21,7 @@ body {
 }
 
 #top {
-  background-color: red;
+  background-color: black;
   text-align: center;
   color: white;
   line-height: 1.4;
@@ -44,7 +44,7 @@ body {
   float: right;
   margin-top: 10px;
   color: white;
-  background-color: red;
+  background-color: black;
   border: none;
   cursor: pointer;
   font-size: 12px;
@@ -108,7 +108,7 @@ body {
 }
 
 #red {
-  color: #d61f27 !important;
+  color: black !important;
 }
 
 #search {
